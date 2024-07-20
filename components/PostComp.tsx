@@ -1,5 +1,7 @@
 import { Avatar } from "@nextui-org/avatar";
 import { MoreIcon } from "./icons";
+import NextImage from "next/image";
+import { Image } from "@nextui-org/image";
 
 export const VideoComp = () => {
   return (
@@ -9,13 +11,22 @@ export const VideoComp = () => {
         <p>Thumbnail</p>
       </div>
       {/* Post Bottom */}
-      <div className="flex gap-3">
+      <div className="flex items-start justify-between gap-3">
         {/* Creator's Pic */}
-        <Avatar className=" w-10" src="https://i.pravatar.cc/300" />
-        <div>
+        <div className="flex-shrink-0">
+          <Image
+            className="rounded-full object-cover"
+            width={40}
+            height={40}
+            loading="lazy"
+            alt="NextUI hero Image"
+            src="https://i.pravatar.cc/300"
+          />
+        </div>
+        <div className="flex flex-col">
           {/* Video title */}
-          <h1 className=" text-medium font-medium leading-5">
-            Donald Trump speaks for the 1st time on the assassination attempt
+          <h1 className="text-medium font-normal sm:font-medium leading-5">
+            BREAKING NEWS: Dana White Introduces Donald Trump At The RNC
           </h1>
           {/* Creator's name */}
           <div>
@@ -25,14 +36,16 @@ export const VideoComp = () => {
           {/* View & Time */}
           <p></p>
         </div>
-        {/* <MoreIcon /> */}
+        <div>
+          <MoreIcon />
+        </div>
       </div>
     </div>
   );
 };
 
 // Font name: Roboto, Arial, sans-serif
-// Font size: 16px
-// Font weight: 500
-// Line height: 22px
-// Font color: rgb(241, 241, 241)
+// Font size: 14px
+// Font weight: 400
+// Line height: 20px
+// Font color: rgb(170, 170, 170)
