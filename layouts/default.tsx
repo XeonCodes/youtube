@@ -10,7 +10,7 @@ export default function DefaultLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="relative px-5 flex flex-col ">
+    <div className="relative px-2 flex flex-col ">
       <Head />
       <NavBar />
       <main className="">{children}</main>

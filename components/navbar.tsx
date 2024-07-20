@@ -22,7 +22,7 @@ export const NavBar = () => {
   setTheme("dark");
 
   return (
-    <div className=" flex items-center justify-between py-3">
+    <div className=" flex items-center justify-between py-2">
       <div className=" flex items-center gap-4">
         <div className=" cursor-pointer w-10 h-10 rounded-full p-2 hover:bg-zinc-800 items-center justify-center">
           <MenuIcon />
