@@ -445,3 +445,22 @@ export const Search: React.FC<IconSvgProps> = ({
     />
   </svg>
 );
+
+export const MoreIcon: React.FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    fill="none"
+    height={size || height}
+    viewBox="0 0 50 50"
+    width={size || width}
+    {...props}
+  >
+    <circle cx={24} cy={12} r={3} fill="currentColor" />
+    <circle cx={24} cy={24} r={3} fill="currentColor" />
+    <circle cx={24} cy={36} r={3} fill="currentColor" />
+  </svg>
+);
