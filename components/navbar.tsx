@@ -19,6 +19,7 @@ import {
   Logo,
   MenuIcon,
   NotificationIcon,
+  Search,
   SearchIcon,
   ShortCreateIcon,
   YoutubeIcon,
@@ -55,6 +56,9 @@ export const NavBar = () => {
         </div>
       </div>
       <div className=" gap-1 md:gap-3 text-end basis-1/3 flex items-center justify-end">
+        <div className=" md:hidden cursor-pointer flex items-center justify-center hover:bg-zinc-800 p-2 rounded-full">
+          <Search className="w-6 h-6" />
+        </div>
         <div className=" cursor-pointer flex items-center justify-center hover:bg-zinc-800 p-2 rounded-full">
           <ShortCreateIcon className="w-6 h-6" />
         </div>

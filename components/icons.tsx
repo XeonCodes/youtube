@@ -417,3 +417,31 @@ export const ShortCreateIcon: React.FC<IconSvgProps> = ({
     <path fill="currentColor" d="M38 30v14h-2V30h2Z" />
   </svg>
 );
+
+export const Search: React.FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    fill="none"
+    height={size || height}
+    viewBox="0 0 50 50"
+    width={size || width}
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M22 9C14.82 9 9 14.82 9 22s5.82 13 13 13 13-5.82 13-13S29.18 9 22 9ZM5 22c0-9.389 7.611-17 17-17s17 7.611 17 17-7.611 17-17 17S5 31.389 5 22Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="m39.586 42.414-9-9 2.828-2.828 9 9a2 2 0 1 1-2.828 2.828Z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
