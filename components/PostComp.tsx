@@ -34,7 +34,7 @@ export const VideoComp = () => {
             <div></div>
           </div>
           {/* View & Time */}
-          <p></p>
+          <p className=" text-xs text-gray-400">562K views * 4 days ago</p>
         </div>
         <div>
           <MoreIcon />
