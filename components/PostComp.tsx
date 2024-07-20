@@ -2,6 +2,7 @@ import { Avatar } from "@nextui-org/avatar";
 import { MoreIcon } from "./icons";
 import NextImage from "next/image";
 import { Image } from "@nextui-org/image";
+import { IoEllipsisVertical } from "react-icons/io5";
 
 export const VideoComp = () => {
   return (
@@ -11,7 +12,7 @@ export const VideoComp = () => {
         <p>Thumbnail</p>
       </div>
       {/* Post Bottom */}
-      <div className="flex items-start px-5 sm:px-0 justify-between gap-3">
+      <div className="flex items-start px-5 sm:px-0 justify-between gap-2">
         {/* Creator's Pic */}
         <div className="flex-shrink-0">
           <Image
@@ -36,8 +37,8 @@ export const VideoComp = () => {
           {/* View & Time */}
           <p className=" text-xs text-gray-400">562K views * 4 days ago</p>
         </div>
-        <div>
-          <MoreIcon />
+        <div className="">
+          <IoEllipsisVertical />
         </div>
       </div>
     </div>
