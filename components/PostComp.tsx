@@ -3,6 +3,7 @@ import { MoreIcon } from "./icons";
 import NextImage from "next/image";
 import { Image } from "@nextui-org/image";
 import { IoEllipsisVertical } from "react-icons/io5";
+import { MdVerified } from "react-icons/md";
 
 export const VideoComp = () => {
   return (
@@ -29,9 +30,11 @@ export const VideoComp = () => {
               BREAKING NEWS: Dana White Introduces Donald Trump At The RNC
             </h1>
             {/* Creator's name */}
-            <div>
+            <div className="flex items-center gap-1">
               <p className=" text-xs text-gray-400">Fox News</p>
-              <div></div>
+              <div className="">
+                <MdVerified size={13} className="text-gray-400" />
+              </div>
             </div>
             {/* View & Time */}
             <p className=" text-xs text-gray-400">562K views * 4 days ago</p>
