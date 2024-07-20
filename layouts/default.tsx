@@ -3,6 +3,7 @@ import { Head } from "./head";
 import { NavBar } from "@/components/navbar";
 import { Sidebar } from "@/components/sidebar";
 import { SidebarMedium } from "@/components/sidebar-medium";
+import { VideoCategory } from "@/components/videocategory";
 
 export default function DefaultLayout({
   children,
@@ -13,7 +14,7 @@ export default function DefaultLayout({
     <div className="relative flex flex-col ">
       <Head />
       <NavBar />
-      <main className="mt-16 flex items-center">
+      <main className="mt-14 flex items-center">
         <div className=" hidden xl:flex flex-col w-56">
           <Sidebar />
         </div>
