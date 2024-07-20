@@ -11,7 +11,7 @@ export const VideoComp = () => {
         <p>Thumbnail</p>
       </div>
       {/* Post Bottom */}
-      <div className="flex items-start justify-between gap-3">
+      <div className="flex items-start px-5 sm:px-0 justify-between gap-3">
         {/* Creator's Pic */}
         <div className="flex-shrink-0">
           <Image
@@ -25,12 +25,12 @@ export const VideoComp = () => {
         </div>
         <div className="flex flex-col">
           {/* Video title */}
-          <h1 className="text-medium font-normal sm:font-medium leading-5">
+          <h1 className="text-sm font-normal sm:font-medium leading-5">
             BREAKING NEWS: Dana White Introduces Donald Trump At The RNC
           </h1>
           {/* Creator's name */}
           <div>
-            <p></p>
+            <p className=" text-xs text-gray-400">Fox News</p>
             <div></div>
           </div>
           {/* View & Time */}

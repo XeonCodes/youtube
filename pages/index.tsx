@@ -12,7 +12,7 @@ import { VideoComp } from "@/components/PostComp";
 export default function IndexPage() {
   return (
     <DefaultLayout>
-      <section className="flex px-6 sm:px-20 flex-col justify-center gap-4">
+      <section className="flex sm:px-20 flex-col justify-center gap-4">
         {/* Posts */}
         <VideoComp />
       </section>
