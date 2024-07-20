@@ -66,7 +66,7 @@ export const NavBar = () => {
           <NotificationIcon className="w-6 h-6" />
         </div>
         <div className=" m-0 md:ml-4 cursor-pointer flex items-center justify-center hover:bg-zinc-800 p-2 rounded-full">
-          <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026702d" />
+          <Avatar src="https://i.pravatar.cc/300" />
         </div>
       </div>
     </div>

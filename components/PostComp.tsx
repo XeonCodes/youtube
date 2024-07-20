@@ -11,10 +11,7 @@ export const VideoComp = () => {
       {/* Post Bottom */}
       <div className="flex gap-3">
         {/* Creator's Pic */}
-        <Avatar
-          className=" w-10"
-          src="https://i.pravatar.cc/150?u=a04258114e29026702d"
-        />
+        <Avatar className=" w-10" src="https://i.pravatar.cc/300" />
         <div>
           {/* Video title */}
           <h1 className=" text-medium font-medium leading-5">
