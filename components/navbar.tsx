@@ -54,14 +54,14 @@ export const NavBar = () => {
           <AudioIcon className="w-6 h-6" />
         </div>
       </div>
-      <div className=" gap-3 text-end basis-1/3 flex items-center justify-end">
+      <div className=" gap-1 md:gap-3 text-end basis-1/3 flex items-center justify-end">
         <div className=" cursor-pointer flex items-center justify-center hover:bg-zinc-800 p-2 rounded-full">
           <ShortCreateIcon className="w-6 h-6" />
         </div>
         <div className=" cursor-pointer flex items-center justify-center hover:bg-zinc-800 p-2 rounded-full">
           <NotificationIcon className="w-6 h-6" />
         </div>
-        <div className=" ml-4 cursor-pointer flex items-center justify-center hover:bg-zinc-800 p-2 rounded-full">
+        <div className=" m-0 md:ml-4 cursor-pointer flex items-center justify-center hover:bg-zinc-800 p-2 rounded-full">
           <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026702d" />
         </div>
       </div>
