@@ -12,17 +12,10 @@ export const VideoComp = () => {
         <p>Thumbnail</p>
       </div>
       {/* Post Bottom */}
-      <div className="flex items-start px-5 sm:px-0 justify-between gap-2">
+      <div className="flex items-start px-3 sm:px-0 justify-between gap-2">
         {/* Creator's Pic */}
         <div className="flex-shrink-0">
-          <Image
-            className="rounded-full object-cover"
-            width={40}
-            height={40}
-            loading="lazy"
-            alt="NextUI hero Image"
-            src="https://i.pravatar.cc/300"
-          />
+          <Avatar src="https://i.pravatar.cc/300" size="sm" />
         </div>
         <div className="flex flex-col">
           {/* Video title */}
