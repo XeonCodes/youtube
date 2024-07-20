@@ -1,7 +1,7 @@
 export const SidebarMedium = () => {
   return (
     <div>
-      <p>Side Bar Medium</p>
+      <p>M</p>
     </div>
   );
 };
