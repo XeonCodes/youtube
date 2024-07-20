@@ -13,7 +13,16 @@ import { siteConfig } from "@/config/site";
 import clsx from "clsx";
 import { link as linkStyles } from "@nextui-org/theme";
 import { useTheme } from "next-themes";
-import { AudioIcon, Logo, MenuIcon, SearchIcon, YoutubeIcon } from "./icons";
+import { Avatar, AvatarGroup, AvatarIcon } from "@nextui-org/avatar";
+import {
+  AudioIcon,
+  Logo,
+  MenuIcon,
+  NotificationIcon,
+  SearchIcon,
+  ShortCreateIcon,
+  YoutubeIcon,
+} from "./icons";
 import { Input } from "@nextui-org/input";
 
 export const NavBar = () => {
@@ -23,19 +32,38 @@ export const NavBar = () => {
 
   return (
     <div className=" flex items-center justify-between py-2">
-      <div className=" flex items-center gap-4">
-        <div className=" cursor-pointer w-10 h-10 rounded-full p-2 hover:bg-zinc-800 items-center justify-center">
-          <MenuIcon />
+      <div className=" flex items-center gap-4 basis-1/3">
+        <div className=" cursor-pointer flex items-center justify-center hover:bg-zinc-800 p-2 rounded-full">
+          <MenuIcon className="w-6 h-6" />
         </div>
         <div className="">
           <YoutubeIcon />
         </div>
       </div>
-      <div className=" hidden md:flex">
-        <p>Second</p>
+      <div className="hidden md:flex justify-between items-center w-full gap-3 basis-1/3">
+        <Input
+          type="text"
+          radius="full"
+          variant={"bordered"}
+          placeholder="Search"
+          endContent={
+            <SearchIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
+          }
+        />
+        <div className=" cursor-pointer flex items-center justify-center bg-zinc-800 p-2 rounded-full">
+          <AudioIcon className="w-6 h-6" />
+        </div>
       </div>
-      <div>
-        <p>Third</p>
+      <div className=" gap-3 text-end basis-1/3 flex items-center justify-end">
+        <div className=" cursor-pointer flex items-center justify-center hover:bg-zinc-800 p-2 rounded-full">
+          <ShortCreateIcon className="w-6 h-6" />
+        </div>
+        <div className=" cursor-pointer flex items-center justify-center hover:bg-zinc-800 p-2 rounded-full">
+          <NotificationIcon className="w-6 h-6" />
+        </div>
+        <div className=" ml-4 cursor-pointer flex items-center justify-center hover:bg-zinc-800 p-2 rounded-full">
+          <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026702d" />
+        </div>
       </div>
     </div>
   );

@@ -364,3 +364,56 @@ export const AudioIcon: React.FC<IconSvgProps> = ({
     <path fill="currentColor" d="M22 36h4v8h-4v-8Z" />
   </svg>
 );
+
+export const NotificationIcon: React.FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    fill="none"
+    height={size || height}
+    viewBox="0 0 50 50"
+    width={size || width}
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M24 11c-5.523 0-10 4.477-10 10v10.414l-4 4V36h28v-.586l-4-4V21c0-5.523-4.477-10-10-10ZM12 21c0-6.627 5.373-12 12-12s12 5.373 12 12v9.586l4 4V38H8v-3.414l4-4V21Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="currentColor"
+      d="M20 8a4 4 0 0 1 8 0v2h-8V8ZM28 40a4 4 0 0 1-8 0h8Z"
+    />
+  </svg>
+);
+
+export const ShortCreateIcon: React.FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    fill="none"
+    height={size || height}
+    viewBox="0 0 50 50"
+    width={size || width}
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M33.896 9.42A6 6 0 0 0 25.7 7.224l-15.589 9a6 6 0 0 0 1.625 11.036 1 1 0 0 1 .27 1.84l-2.395 1.382a6 6 0 1 0 6 10.392l7.794-4.5a1 1 0 0 1 1 1.732l-7.794 4.5a8 8 0 1 1-8-13.856l.598-.345a8 8 0 0 1-.098-13.913l15.589-9a8 8 0 0 1 8 13.856l-.598.345a7.964 7.964 0 0 1 3.026 2.985c.487.845.804 1.743.96 2.654a1 1 0 1 1-1.972.336 5.988 5.988 0 0 0-.72-1.99 5.981 5.981 0 0 0-3.82-2.84 1 1 0 0 1-.271-1.84l2.395-1.382a6 6 0 0 0 2.196-8.196Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="currentColor"
+      d="m27 24-9 5.196V18.804L27 24ZM30 36h14v2H30v-2Z"
+    />
+    <path fill="currentColor" d="M38 30v14h-2V30h2Z" />
+  </svg>
+);
