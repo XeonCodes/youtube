@@ -1,6 +1,7 @@
 import { Link } from "@nextui-org/link";
 
 import { Head } from "./head";
+
 import { NavBar } from "@/components/navbar";
 
 export default function DefaultLayout({
@@ -9,7 +10,7 @@ export default function DefaultLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="w-full flex flex-col px-3">
+    <div className="relative px-5 flex flex-col ">
       <Head />
       <NavBar />
       <main className="">{children}</main>

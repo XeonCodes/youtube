@@ -11,9 +11,7 @@ import DefaultLayout from "@/layouts/default";
 export default function IndexPage() {
   return (
     <DefaultLayout>
-      <section className="flex flex-col justify-center gap-4">
-        <p className="">ccs</p>
-      </section>
+      <section className="flex flex-col justify-center gap-4"></section>
     </DefaultLayout>
   );
 }
