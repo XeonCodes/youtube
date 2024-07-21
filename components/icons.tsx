@@ -464,3 +464,76 @@ export const MoreIcon: React.FC<IconSvgProps> = ({
     <circle cx={24} cy={36} r={3} fill="currentColor" />
   </svg>
 );
+
+export const HomeIcon: React.FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    fill="none"
+    height={size || height}
+    viewBox="0 0 50 50"
+    width={size || width}
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M24 6 8 20v22h12V30h8v12h12V20L24 6Z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
+export const LibraryIcon: React.FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    fill="none"
+    height={size || height}
+    viewBox="0 0 50 50"
+    width={size || width}
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M12 6h30v30H12V6Zm2 2v26h26V8H14Z"
+      clipRule="evenodd"
+    />
+    <path fill="currentColor" d="m34 21-12 6.928V14.072L34 21Z" />
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M6 13h2v27h27v2H6V13Z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
+export const SubscriptionIcon: React.FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    fill="none"
+    height={size || height}
+    viewBox="0 0 50 50"
+    width={size || width}
+    {...props}
+  >
+    <path fill="currentColor" d="m29 30-9 5.196V24.804L29 30Z" />
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M4 18h40v24H4V18Zm2 2v20h36V20H6Z"
+      clipRule="evenodd"
+    />
+    <path fill="currentColor" d="M8 12h32v2H8v-2ZM14 6h20v2H14V6Z" />
+  </svg>
+);

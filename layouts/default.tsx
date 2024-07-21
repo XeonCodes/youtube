@@ -14,11 +14,11 @@ export default function DefaultLayout({
     <div className="relative flex flex-col ">
       <Head />
       <NavBar />
-      <main className="mt-14 flex items-center">
+      <main className="mt-14 flex ">
         <div className=" hidden xl:flex flex-col w-56">
           <Sidebar />
         </div>
-        <div className=" hidden bg-red-700 lg:flex flex-col xl:hidden px-5">
+        <div className=" hidden md:flex flex-col xl:hidden ">
           <SidebarMedium />
         </div>
         <div className="w-full">{children}</div>
