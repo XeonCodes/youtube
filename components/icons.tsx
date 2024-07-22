@@ -486,6 +486,7 @@ export const HomeIcon: React.FC<IconSvgProps> = ({
     />
   </svg>
 );
+
 export const LibraryIcon: React.FC<IconSvgProps> = ({
   size = 36,
   width,
@@ -514,6 +515,7 @@ export const LibraryIcon: React.FC<IconSvgProps> = ({
     />
   </svg>
 );
+
 export const SubscriptionIcon: React.FC<IconSvgProps> = ({
   size = 36,
   width,
@@ -535,5 +537,109 @@ export const SubscriptionIcon: React.FC<IconSvgProps> = ({
       clipRule="evenodd"
     />
     <path fill="currentColor" d="M8 12h32v2H8v-2ZM14 6h20v2H14V6Z" />
+  </svg>
+);
+
+export const WatchLaterIcon: React.FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    fill="none"
+    height={size || height}
+    viewBox="0 0 50 50"
+    width={size || width}
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M24 6a18 18 0 1 0 0 36 18 18 0 0 0 0-36ZM9.858 9.858a20 20 0 1 1 28.284 28.284A20 20 0 0 1 9.858 9.858Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M20 14.5h4v10.948l7.133 4.904-2.266 3.296L20 27.552V14.5Z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
+
+export const HistoryIcon: React.FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    fill="none"
+    height={size || height}
+    viewBox="0 0 50 50"
+    width={size || width}
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M15.243 6.02A20 20 0 1 1 4 24h2a18 18 0 1 0 1.282-6.67l-1.858-.742A20 20 0 0 1 15.243 6.02Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M6 16V6H4v12h12v-2H6ZM20 14.5h4v10.948l7.133 4.904-2.266 3.296L20 27.552V14.5Z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
+
+export const PlayListIcon: React.FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    fill="none"
+    height={size || height}
+    viewBox="0 0 50 50"
+    width={size || width}
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M4 14h40v2H4v-2ZM4 22h22v2H4v-2ZM4 30h22v2H4v-2ZM43 30l-12 6.928V23.072L43 30Z"
+    />
+  </svg>
+);
+
+export const LikeIcon: React.FC<IconSvgProps> = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    fill="none"
+    height={size || height}
+    viewBox="0 0 50 50"
+    width={size || width}
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M4 19h11v24H4V19Zm2 2v20h7V21H6Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M32.2 8.77c.756-2.015-1.765-3.638-3.286-2.117L15 20.567V41h18.417a5 5 0 0 0 4.824-3.684l3.416-12.526A3 3 0 0 0 38.763 21h-9.706a1 1 0 0 1-.936-1.35L32.2 8.77ZM13.689 19.05 27.5 5.239c3.041-3.042 8.084.205 6.573 4.232l-3.573 9.53h8.263c3.297 0 5.691 3.134 4.824 6.315L40.17 37.842A7 7 0 0 1 33.417 43H14a1 1 0 0 1-1-1V20a1 1 0 0 1 .688-.95Z"
+      clipRule="evenodd"
+    />
   </svg>
 );

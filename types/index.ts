@@ -5,6 +5,7 @@ export type IconSvgProps = SVGProps<SVGSVGElement> & {
 };
 
 export interface SidebarMediumTypes {
+  id: number;
   icon: React.ReactNode;
   title: string;
 }

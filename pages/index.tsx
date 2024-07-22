@@ -9,6 +9,7 @@ import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
 import { VideoComp } from "@/components/PostComp";
 import { VideoCategory } from "@/components/videocategory";
+import { VideoPostLists } from "@/static/Json";
 
 export default function IndexPage() {
   return (
@@ -18,13 +19,10 @@ export default function IndexPage() {
       </div>
       <section className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:px-5 justify-center gap-4">
         {/* Posts */}
-        <VideoComp />
-        <VideoComp />
-        <VideoComp />
-        <VideoComp />
-        <VideoComp />
-        <VideoComp />
-        <VideoComp />
+
+        {VideoPostLists.map((v, i) => (
+          <VideoComp key={i} item={v} />
+        ))}
       </section>
     </DefaultLayout>
   );

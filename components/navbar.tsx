@@ -33,7 +33,7 @@ export const NavBar = () => {
   setTheme("dark");
 
   return (
-    <div className="fixed top-0 bg-black left-0 w-full z-50 flex flex-col">
+    <div className="fixed px-2 top-0 bg-black left-0 w-full z-50 flex flex-col">
       <div className={` flex items-center justify-between`}>
         <div className=" flex items-center gap-4 basis-1/3">
           <div className=" cursor-pointer flex items-center justify-center hover:bg-zinc-800 p-2 rounded-full">
