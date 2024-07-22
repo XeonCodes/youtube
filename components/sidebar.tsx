@@ -10,7 +10,7 @@ export const Sidebar = () => {
       {SidebaLists1.map((v, i) => (
         <div
           key={i}
-          onClick={() => setActive(v.id)}
+          // onClick={() => setActive(v.id)}
           className={`hover:bg-zinc-800 ${active == v.id && "bg-zinc-800"} gap-4 px-2 py-1 items-center text-left cursor-pointer w-full rounded-lg flex`}
         >
           {v.icon}
@@ -31,7 +31,7 @@ export const Sidebar = () => {
 
       {SidebaLists2.map((v, i) => (
         <div
-          onClick={() => setActive(v.id)}
+          // onClick={() => setActive(v.id)}
           key={i}
           className={`hover:bg-zinc-800 ${active == v.id && "bg-zinc-800"} gap-4 px-2 py-1 items-center text-left cursor-pointer w-full rounded-lg flex`}
         >
