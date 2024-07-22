@@ -8,3 +8,7 @@ export interface SidebarMediumTypes {
   icon: React.ReactNode;
   title: string;
 }
+
+export interface VideoCategoryTypes {
+  title: string;
+}

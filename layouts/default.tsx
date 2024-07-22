@@ -18,10 +18,12 @@ export default function DefaultLayout({
         <div className=" hidden xl:flex flex-col w-56">
           <Sidebar />
         </div>
-        <div className=" hidden md:flex flex-col xl:hidden ">
+        <div className=" hidden scrollbar-hide h-screen overflow-scroll md:flex flex-col xl:hidden ">
           <SidebarMedium />
         </div>
-        <div className="w-full">{children}</div>
+        <div className="w-full scrollbar-hide h-screen overflow-scroll">
+          {children}
+        </div>
       </main>
       <footer></footer>
     </div>

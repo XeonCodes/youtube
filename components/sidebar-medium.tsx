@@ -3,7 +3,7 @@ import { HomeIcon, ShortCreateIcon } from "./icons";
 
 export const SidebarMedium = () => {
   return (
-    <div className="w-full ">
+    <div className="w-full">
       {SidebarMediumLists.map((v, i) => (
         <div
           key={i}
