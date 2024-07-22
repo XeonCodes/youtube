@@ -15,7 +15,7 @@ export default function DefaultLayout({
       <Head />
       <NavBar />
       <main className="mt-14 flex ">
-        <div className="scrollbar-hide h-screen overflow-scroll hidden xl:flex px-3 flex-col w-56">
+        <div className="scrollbar-hide h-screen overflow-scroll hidden xl:flex px-3 flex-col w-64">
           <Sidebar />
           <Sidebar />
           <Sidebar />

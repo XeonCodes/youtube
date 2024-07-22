@@ -17,7 +17,7 @@ export default function IndexPage() {
       <div className="px-5 pb-2 pt-2 bg-black fixed z-50 w-full">
         <VideoCategory />
       </div>
-      <section className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:px-5 justify-center gap-4">
+      <section className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:px-5 justify-center gap-4">
         {/* Posts */}
 
         {VideoPostLists.map((v, i) => (
