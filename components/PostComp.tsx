@@ -10,10 +10,12 @@ export const VideoComp = ({ item }: any) => {
     <div className=" w-full flex flex-col gap-2 cursor-pointer">
       {/* Thumbnail */}
       <div className="w-full relative">
-        <Image
-          width={"100%"}
-          //   height={270}
-          className=" object-cover rounded-none sm:rounded-2xl"
+        <NextImage
+          alt="post_img"
+          width={100}
+          height={270}
+          quality={50}
+          className=" object-cover w-full rounded-none sm:rounded-2xl"
           src={item.thumbnail}
         />
         <p className=" absolute bottom-2 font-bold text-sm right-3 px-2 rounded-sm z-40 bg-zinc-800">
