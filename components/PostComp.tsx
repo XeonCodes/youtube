@@ -14,6 +14,7 @@ export const VideoComp = ({ item }: any) => {
           alt="post_img"
           width={100}
           height={270}
+          loading="lazy"
           quality={50}
           className=" object-cover w-full rounded-none sm:rounded-2xl"
           src={item.thumbnail}
