@@ -137,7 +137,7 @@ export const VideoCategoryLists: VideoCategoryTypes[] = [
 
 export const VideoPostLists = [
   {
-    title: "BREAKING NEWS: Dana White Introduces Donald Trump At The RNC",
+    title: "BREAKING NEWS: Mrs Dana White Introduces Donald Trump At The RNC",
     channel: "Fox News",
     avater: "https://i.pravatar.cc/150?img=1",
     verified: false,
